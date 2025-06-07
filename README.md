@@ -64,6 +64,38 @@ Evaluation: Accuracy is measured using R² Score and Mean Squared Error
 
 The model performs well with a typical R² of around 0.99 and low error (MSE ~1.7), making it highly reliable for predictions on known data patterns.
 
+Dataset Description
+The dataset used for training includes air pollution records for 6 major cities. Each row contains:
+
+Concentrations of key pollutants: CO, NO₂, SO₂, PM2.5, PM10, O₃
+
+Date features: year, month, day, weekday
+
+Target variable: AQI (Air Quality Index)
+
+Each city has about 9,000 records, which ensures the model is trained with sufficient local data.
+
+How It Works
+User selects a city from the sidebar.
+
+Pollutant levels can be adjusted using sliders.
+
+The trained model takes these inputs and predicts the AQI.
+
+The dashboard displays:
+
+Predicted AQI value
+
+Health condition message based on the AQI
+
+Line graph of monthly average of any selected pollutant
+
+Model evaluation scores (MSE and R²)
+
+Pollutant contribution in the form of bar and pie charts
+
+Optional: Users can expand a section to view the actual data being used.
+
 License
 This project is released under the MIT License. You can use, modify, and distribute it as needed.
 
